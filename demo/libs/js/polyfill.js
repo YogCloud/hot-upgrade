@@ -1,0 +1,1 @@
+console.log('加载 兼容JS');

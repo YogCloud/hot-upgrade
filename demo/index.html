@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <link rel="icon" href="favicon.ico">
+    <title>前端热更新</title>
+    <!-- 加载文件（缓存时间为1分钟） -->
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="libs/base.js?v=' + parseInt((new Date).getTime() / 60000) + '"><\/script>');
+    </script>
+    <!-- 打包文件 -->
+    <link href="js/homes.js?v=pack" rel="prefetch">
+    <link href="js/useCount.js?v=pack" rel="prefetch">
+    <link href="js/app.js?v=pack" rel="preload" as="script">
+    <link href="js/chunk-vendors.js?v=pack" rel="preload" as="script">
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- 打包文件 -->
+    <script type="text/javascript" src="js/chunk-vendors.js?v=pack"></script>
+    <script type="text/javascript" src="js/app.js?v=pack"></script>
+</body>
+</html>
