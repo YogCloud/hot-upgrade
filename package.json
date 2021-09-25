@@ -1,0 +1,20 @@
+{
+  "name": "hot-upgrade",
+  "version": "1.0.0",
+  "author": "",
+  "description": "公共热加载插件",
+  "private": true,
+  "scripts": {
+    "build": "cross-env NODE_ENV=production gulp",
+    "local": "cross-env NODE_ENV=developmen gulp",
+    "test": "cross-env NODE_ENV=test gulp"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.1.3",
+    "gulp-uglify": "^3.0.2"
+  }
+}
