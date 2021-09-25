@@ -1,6 +1,6 @@
-# base
+# hot-upgrade 前端公共加载插件
 
-> 前端项目公共加载库，一个能够让你快速的构建统一热加载的项目，方便你管理几百个前端项目不眨一下眼睛。
+> 前端项目公共加载插件，一个能够让你快速的构建统一热加载的项目，方便你管理几百个前端项目不眨一下眼睛。
 
 ### 引入方式
 
@@ -19,3 +19,7 @@ document.write('<script type="text/javascript" src="/libs/pc.js?v=' + parseInt((
 document.write('<script type="text/javascript" src="/libs/h5.js?v=' + parseInt((new Date).getTime() / 60000) + '"><\/script>');
 </script>
 ```
+
+## 联系作者
+
+@程序猿微信：h6play
